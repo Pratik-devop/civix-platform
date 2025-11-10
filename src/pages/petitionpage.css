@@ -1,0 +1,620 @@
+/* Global Styles */
+.petitions-container {
+  width: 100vw;
+  height: 56.25vw; /* 16:9 aspect ratio */
+  max-height: 100vh;
+  max-width: 177.78vh; /* 16:9 aspect ratio */
+  margin: 0 auto;
+  background-color: #f8fafc;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Styles */
+.main-header {
+  background-color: #4fd1c7;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  flex-shrink: 0;
+}
+
+.header-left .logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-icon {
+  width: 26px;
+  height: 26px;
+  background-color: white;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4fd1c7;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+.main-nav {
+  display: flex;
+  gap: 6px;
+}
+
+.nav-item {
+  padding: 6px 16px;
+  border-radius: 16px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 13px;
+  transition: background-color 0.2s;
+}
+
+.nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-item.active {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.notification-btn {
+  position: relative;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+.notification-badge {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background-color: #ef4444;
+  color: white;
+  font-size: 9px;
+  font-weight: 600;
+  padding: 1px 4px;
+  border-radius: 6px;
+  min-width: 14px;
+  text-align: center;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: white;
+  cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.user-avatar {
+  width: 26px;
+  height: 26px;
+  background-color: white;
+  color: #4fd1c7;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.user-name {
+  font-weight: 500;
+  font-size: 13px;
+}
+
+/* Page Layout */
+.page-layout {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 200px;
+  background-color: #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 0;
+  flex-shrink: 0;
+  overflow-y: auto;
+}
+
+.user-info {
+  padding: 0 16px 16px 16px;
+  border-bottom: 1px solid #d1d5db;
+  margin-bottom: 16px;
+}
+
+.user-avatar.large {
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.user-details h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 2px 0;
+}
+
+.user-name-sidebar {
+  font-size: 15px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 2px 0;
+}
+
+.user-status {
+  font-size: 10px;
+  color: #6b7280;
+  margin: 0 0 8px 0;
+}
+
+.user-location {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #6b7280;
+  font-size: 11px;
+  margin-bottom: 6px;
+}
+
+.user-email {
+  font-size: 11px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.sidebar-nav {
+  flex: 1;
+  padding: 0 8px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  color: #6b7280;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-bottom: 2px;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.nav-link:hover {
+  background-color: #d1d5db;
+  color: #374151;
+}
+
+.nav-link.active {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.sidebar-footer {
+  padding: 16px 8px 0 8px;
+  border-top: 1px solid #d1d5db;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.page-header {
+  background-color: white;
+  padding: 20px 24px 16px 24px;
+  border-bottom: 1px solid #e5e7eb;
+  flex-shrink: 0;
+}
+
+.page-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 4px 0;
+}
+
+.page-description {
+  font-size: 13px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.content-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 24px;
+  min-height: 0;
+  overflow: hidden;
+}
+
+/* Filters Section */
+.filters-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  flex-shrink: 0;
+}
+
+.tabs {
+  display: flex;
+  background-color: white;
+  border-radius: 6px;
+  padding: 2px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.tab {
+  padding: 6px 12px;
+  background: none;
+  border: none;
+  border-radius: 4px;
+  color: #6b7280;
+  font-weight: 500;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tab:hover {
+  background-color: #f3f4f6;
+}
+
+.tab.active {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.filters {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.filter-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  padding: 0 8px;
+  min-width: 110px;
+}
+
+.filter-group.status-filter {
+  min-width: 90px;
+}
+
+.filter-icon {
+  color: #6b7280;
+  margin-right: 6px;
+  flex-shrink: 0;
+}
+
+.status-label {
+  font-size: 12px;
+  color: #374151;
+  font-weight: 500;
+  margin-right: 6px;
+}
+
+.filter-select {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 6px 16px 6px 0;
+  font-size: 12px;
+  color: #374151;
+  cursor: pointer;
+  appearance: none;
+  flex: 1;
+}
+
+.select-arrow {
+  position: absolute;
+  right: 6px;
+  color: #6b7280;
+  pointer-events: none;
+}
+
+/* NEW: Horizontal Scrolling Filter Bar */
+.horizontal-filters {
+  margin-bottom: 16px;
+  flex-shrink: 0;
+}
+
+.horizontal-filters-container {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding: 8px 0;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.horizontal-filters-container::-webkit-scrollbar {
+  display: none; /* WebKit */
+}
+
+.horizontal-filter-btn {
+  flex-shrink: 0;
+  padding: 8px 16px;
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  color: #6b7280;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.horizontal-filter-btn:hover {
+  background-color: #f9fafb;
+  border-color: #d1d5db;
+}
+
+.horizontal-filter-btn.active {
+  background-color: #3b82f6;
+  border-color: #3b82f6;
+  color: white;
+}
+
+/* Petitions Grid */
+.petitions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding-bottom: 14px;
+}
+
+.petition-card {
+  background-color: white;
+  border-radius: 8px;
+  padding: 14px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  min-height: 200px;
+}
+
+.petition-time {
+  font-size: 10px;
+  color: #6b7280;
+  margin-bottom: 8px;
+  text-align: right;
+}
+
+.petition-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.petition-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 8px 0;
+}
+
+.petition-description {
+  font-size: 11px;
+  color: #6b7280;
+  line-height: 1.4;
+  margin: 0 0 12px 0;
+  flex: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.petition-progress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.signatures-count {
+  font-size: 10px;
+  color: #374151;
+  font-weight: 500;
+}
+
+.petition-status {
+  background-color: #22c55e;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 8px;
+  font-size: 9px;
+  font-weight: 600;
+}
+
+.petition-actions {
+  display: flex;
+  gap: 6px;
+  margin-top: auto;
+}
+
+.btn-view-details {
+  background: none;
+  border: none;
+  color: #3b82f6;
+  font-size: 11px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 6px 0;
+  text-decoration: underline;
+}
+
+.btn-view-details:hover {
+  color: #2563eb;
+}
+
+.btn-sign-petition {
+  background-color: #22c55e;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-sign-petition:hover {
+  background-color: #16a34a;
+}
+
+/* Call to Action Section */
+.cta-section {
+  background-color: #d1d5db;
+  border-radius: 8px;
+  padding: 14px;
+  text-align: center;
+  margin-top: 14px;
+  flex-shrink: 0;
+}
+
+.cta-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 10px 0;
+}
+
+.cta-button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.cta-button:hover {
+  background-color: #2563eb;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .petitions-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .petitions-container {
+    height: auto;
+    min-height: 100vh;
+  }
+  
+  .page-layout {
+    flex-direction: column;
+  }
+  
+  .sidebar {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    padding: 16px 0;
+  }
+  
+  .user-info {
+    padding: 0 16px 16px 16px;
+  }
+  
+  .sidebar-nav {
+    display: flex;
+    overflow-x: auto;
+    padding: 0 16px;
+  }
+  
+  .nav-link {
+    white-space: nowrap;
+    min-width: fit-content;
+  }
+  
+  .petitions-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .filters-section {
+    flex-direction: column;
+    gap: 16px;
+    align-items: stretch;
+  }
+  
+  .filters {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .filter-group {
+    flex: 1;
+    min-width: 120px;
+  }
+  
+  .horizontal-filters-container {
+    padding: 8px 16px 8px 0;
+  }
+  
+  .content-wrapper {
+    padding: 16px;
+  }
+  
+  .page-header {
+    padding: 20px 16px 16px 16px;
+  }
+}
