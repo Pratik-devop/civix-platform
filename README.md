@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# 🌐 Civix Platform (Frontend)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![GitHub last commit](https://img.shields.io/github/last-commit/Pratik-devop/civix-platform)
+![GitHub repo size](https://img.shields.io/github/repo-size/Pratik-devop/civix-platform)
+![GitHub issues](https://img.shields.io/github/issues/Pratik-devop/civix-platform)
+![GitHub stars](https://img.shields.io/github/stars/Pratik-devop/civix-platform?style=social)
 
-## Available Scripts
+> **Civix Platform (Frontend)** — a web-based interface empowering citizens to participate in local governance through petitions, voting, and public sentiment polling. Built using React 19 and React Router 7, this frontend focuses on seamless user experience, accessibility, and clean UI design.
+
+---
+
+## 🧭 Overview
+
+Civix enables users to:
+- Create and view community petitions  
+- Participate in location-based polls and votes  
+- Track officials' responses and public feedback  
+- View dashboards summarizing civic activities  
+
+This repository includes the **frontend** implementation only — backend APIs, authentication, and databases are separate and can be integrated later.
+
+---
+
+## 🧱 Tech Stack
+
+| Category | Tools / Libraries |
+|-----------|-------------------|
+| **Framework** | [React 19](https://react.dev/) (via Create React App) |
+| **Routing** | [React Router DOM v7](https://reactrouter.com/en/main) |
+| **UI Icons** | [Lucide React](https://lucide.dev/) |
+| **Testing** | Jest + React Testing Library |
+| **Performance Metrics** | Web Vitals |
+| **Build Tool** | CRA Scripts (`react-scripts 5.0.1`) |
+| **Language** | JavaScript (ES6+) |
+
+---
+
+## ⚙️ Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+| Command | Description |
+|----------|-------------|
+| `npm start` | Runs the app in development mode on [http://localhost:3000](http://localhost:3000). |
+| `npm run build` | Builds the app for production into the `build` folder. |
+| `npm test` | Launches the test runner. |
+| `npm run eject` | Exposes CRA configuration (irreversible). |
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Getting Started (Local Setup)
 
-### `npm test`
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Pratik-devop/civix-platform.git
+   cd civix-platform
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<!-- Folder Structure  -->
+civix-platform/
+│
+├── public/                # Static assets and index.html
+├── src/
+│   ├── components/        # Reusable UI components (Navbar, Button, Footer, etc.)
+│   ├── pages/             # Page-level components (Dashboard, Polls, Petitions, etc.)
+│   ├── App.jsx            # Root component
+│   ├── index.js           # Entry point
+│   └── styles/ (if any)   # CSS files for styling
+│
+├── package.json
+├── .gitignore
+└── README.md
 
-### `npm run build`
+<!-- Features Implemented -->
+✅ Modern, responsive frontend built with React 19
+✅ Dynamic routing with React Router v7
+✅ Component-based architecture
+✅ Petition and Poll creation forms (UI only)
+✅ Civic dashboard and report pages
+✅ Clean design using Lucide icons
+✅ Lightweight and easily extendable codebase
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<!-- My Role/Ownership -->
+This is the frontend implementation of the Civix project — developed independently as a personal project inspired by an earlier internship concept.
+I rebuilt and redesigned the UI, optimized components, added responsive styling, and organized the structure for scalability and clarity.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+📬 Contact
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For collaboration or queries:
+📧 <pratikgarudkar4040@gmail.com>
